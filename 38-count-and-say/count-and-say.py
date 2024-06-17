@@ -2,15 +2,17 @@ class Solution:
     def countAndSay(self, n: int) -> str:
         if n == 1:
             return "1"
-        else:
-            previous = self.countAndSay(n - 1)
-            result = ""
+        
+        current = "1"
+        for _ in range(n - 1):
+            next_say = ""
             count = 1
-            for i in range(1, len(previous)):
-                if previous[i] == previous[i - 1]:
+            for i in range(1, len(current) + 1):
+                if i < len(current) and current[i] == current[i - 1]:
                     count += 1
                 else:
-                    result += str(count) + previous[i - 1]
+                    next_say += str(count) + current[i - 1]
                     count = 1
-            result += str(count) + previous[-1]
-            return result
+            current = next_say
+        
+        return current
