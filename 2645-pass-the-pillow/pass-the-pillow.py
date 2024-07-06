@@ -1,20 +1,20 @@
 class Solution:
     def passThePillow(self, n: int, time: int) -> int:
         flag = False
-        pillow = 0
+        curr = 0
 
         for i in range(time):
-            if flag == True:
-                pillow -= 1
+            if flag:
+                curr -= 1
             else:
-                pillow += 1
+                curr += 1
             
-            if pillow == 1:
+            if curr == 1:
                 flag = False
-
-            if pillow == n:
+            
+            if curr == n:
                 flag = True
         
         if flag:
-            return pillow-1
-        return pillow + 1
+            return curr - 1
+        return curr + 1
