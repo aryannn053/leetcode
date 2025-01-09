@@ -4,4 +4,4 @@ These are solutions for almost every leetcode problem i've done till date. Most 
 <br/>
 
 
-[![Leetcode Stats](https://leetcard.jacoblin.cool/skyran?theme=nord&font=Inter&ext=heatmap)](https://leetcode.com/skyran/)
+[![Leetcode Stats](https://leetcard.jacoblin.cool/skyran?theme=nord&font=Inter&ext=heatmap)](https://leetcode.com/aryantri14/)
